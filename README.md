@@ -163,4 +163,4 @@ rnn_model_v2 = Sequential([
 We provide one notebook file containing the codes to assess the data, results and figures presented in the paper. 
 
 
-Further remarks and improvement suggestions are very welcome.
+**Further remarks and improvement suggestions are very welcome.**
