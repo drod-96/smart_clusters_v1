@@ -16,7 +16,7 @@ model.compile(optimizer=Adam(learning_rate=0.001), loss='mae')
 
 ### FFNN models
 
-Both FFNN models use 3 hidden MLP layers with respectively 60, 60 and 40 ReLU activated neurons. The first model performs time-to-time prediction but the second model uses a flatened 60 sequences.
+Both FFNN models use 3 hidden layers of perceptron with respectively 60, 60 and 40 ReLU activated neurons. The first model performs time-to-time prediction but the second model uses a flatened 60 sequences.
 
 ```
 model = Sequential([
@@ -41,6 +41,7 @@ model = Sequential([
 
 Two versions of CNN models have been considered. Both rely on 1D Convolution + Average pooling layers but differ by the number of layers, the number of filters and the size of the filers.
 
+[-] Version 1
 ```
 optimal_act = 'selu'
 regulazer_rate = 0.0001
@@ -76,8 +77,10 @@ cnn_model_v1 = Sequential([
 
             Dense(units=output_features, activation='relu', name='output_dense')
         ])
+```
 
-
+[-] Version 2
+```
 cnn_model_v2 = Sequential([
             Conv1D(filters=10,
                     kernel_size=3,
@@ -108,6 +111,7 @@ cnn_model_v2 = Sequential([
 
 Two versions of RNN models have been considered. The recurrent layers are using Gated Recurrent Unit cells [https://arxiv.org/abs/1412.3555]. Both differ by the number of GRU-based layers and the number of connected dense layers.
 
+[-] Version 1
 ```
 rnn_model_v1 = Sequential([
             GRU(units=20, 
@@ -127,8 +131,10 @@ rnn_model_v1 = Sequential([
 
             Dense(units=output_features, activation='relu', name='output_dense')
         ])
+```
 
-
+[-] Version 2
+```
 rnn_model_v2 = Sequential([
             GRU(units=20, 
                 unroll=False, return_sequences=True, 
