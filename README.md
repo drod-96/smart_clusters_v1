@@ -41,7 +41,7 @@ model = Sequential([
 
 Two versions of CNN models have been considered. Both rely on 1D Convolution + Average pooling layers but differ by the number of layers, the number of filters and the size of the filers.
 
-[-] Version 1
+#### Version 1
 ```
 optimal_act = 'selu'
 regulazer_rate = 0.0001
@@ -79,7 +79,7 @@ cnn_model_v1 = Sequential([
         ])
 ```
 
-[-] Version 2
+#### Version 2
 ```
 cnn_model_v2 = Sequential([
             Conv1D(filters=10,
@@ -111,7 +111,7 @@ cnn_model_v2 = Sequential([
 
 Two versions of RNN models have been considered. The recurrent layers are using Gated Recurrent Unit cells [https://arxiv.org/abs/1412.3555]. Both differ by the number of GRU-based layers and the number of connected dense layers.
 
-[-] Version 1
+#### Version 1
 ```
 rnn_model_v1 = Sequential([
             GRU(units=20, 
@@ -133,7 +133,7 @@ rnn_model_v1 = Sequential([
         ])
 ```
 
-[-] Version 2
+#### Version 2
 ```
 rnn_model_v2 = Sequential([
             GRU(units=20, 
@@ -158,5 +158,9 @@ rnn_model_v2 = Sequential([
 ```
 
 
-## Notebook files
+## Notebook file
 
+We provide one notebook file containing the codes to assess the data, results and figures presented in the paper. 
+
+
+Further remarks and improvement suggestions are very welcome.
