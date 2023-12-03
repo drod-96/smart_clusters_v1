@@ -2,5 +2,6 @@ Include/
 Lib/
 Scripts/
 share/
+ARTICLE_hybrid_results/
 
 *.cfg

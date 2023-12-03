@@ -1,0 +1,295 @@
+{
+    "cluster_a": {
+        "cluster_key": "a",
+        "cluster_type": "1-0",
+        "cluster_size": 2,
+        "cluster_nodes": [
+            15,
+            23
+        ],
+        "in_going_pipe_id": 19,
+        "remixing_node_id": 13,
+        "remixing_node_id_in_reduced": 13
+    },
+    "cluster_a_prime": {
+        "cluster_key": "a_prime",
+        "cluster_type": "1-0",
+        "cluster_size": 3,
+        "cluster_nodes": [
+            56,
+            45,
+            46
+        ],
+        "in_going_pipe_id": 64,
+        "remixing_node_id": 50,
+        "remixing_node_id_in_reduced": 48
+    },
+    "cluster_a_prime_2": {
+        "cluster_key": "a_prime_2",
+        "cluster_type": "1-0",
+        "cluster_size": 3,
+        "cluster_nodes": [
+            26,
+            27,
+            42
+        ],
+        "in_going_pipe_id": 35,
+        "remixing_node_id": 41,
+        "remixing_node_id_in_reduced": 39
+    },
+    "cluster_b": {
+        "cluster_key": "b",
+        "cluster_type": "1-0",
+        "cluster_size": 4,
+        "cluster_nodes": [
+            43,
+            65,
+            58,
+            59
+        ],
+        "in_going_pipe_id": 33,
+        "remixing_node_id": 25,
+        "remixing_node_id_in_reduced": 25
+    },
+    "cluster_c": {
+        "cluster_key": "c",
+        "cluster_type": "1-0",
+        "cluster_size": 9,
+        "cluster_nodes": [
+            41,
+            27,
+            42,
+            26,
+            2,
+            3,
+            5,
+            4,
+            35
+        ],
+        "in_going_pipe_id": 38,
+        "remixing_node_id": 28,
+        "remixing_node_id_in_reduced": 22
+    },
+    "cluster_d": {
+        "cluster_key": "d",
+        "cluster_type": "1-0",
+        "cluster_size": 9,
+        "cluster_nodes": [
+            65,
+            43,
+            58,
+            59,
+            25,
+            24,
+            52,
+            14,
+            51
+        ],
+        "in_going_pipe_id": 18,
+        "remixing_node_id": 13,
+        "remixing_node_id_in_reduced": 13
+    },
+    "cluster_e": {
+        "cluster_key": "e",
+        "cluster_type": "1-0",
+        "cluster_size": 12,
+        "cluster_nodes": [
+            41,
+            27,
+            42,
+            26,
+            2,
+            3,
+            5,
+            4,
+            35,
+            28,
+            29,
+            53
+        ],
+        "in_going_pipe_id": 40,
+        "remixing_node_id": 54,
+        "remixing_node_id_in_reduced": 42
+    },
+    "cluster_f": {
+        "cluster_key": "f",
+        "cluster_type": "1-0",
+        "cluster_size": 27,
+        "cluster_nodes": [
+            41,
+            27,
+            42,
+            26,
+            2,
+            3,
+            5,
+            4,
+            35,
+            28,
+            29,
+            53,
+            65,
+            43,
+            58,
+            59,
+            25,
+            24,
+            52,
+            14,
+            51,
+            13,
+            15,
+            23,
+            54,
+            55,
+            34
+        ],
+        "in_going_pipe_id": 9,
+        "remixing_node_id": 6,
+        "remixing_node_id_in_reduced": 2
+    },
+    "cluster_g": {
+        "cluster_key": "g",
+        "cluster_type": "1-1",
+        "cluster_size": 2,
+        "cluster_nodes": [
+            55,
+            34
+        ],
+        "in_going_pipe_id": 9,
+        "out_going_pipe_id": 66,
+        "remixing_node_id_trout": 6,
+        "remixing_node_id_trout_in_reduced": 6,
+        "remixing_node_id_tsout": 54,
+        "remixing_node_id_tsout_in_reduced": 53
+    },
+    "cluster_h": {
+        "cluster_key": "h",
+        "cluster_type": "1-1",
+        "cluster_size": 5,
+        "cluster_nodes": [
+            25,
+            24,
+            52,
+            14,
+            51
+        ],
+        "in_going_pipe_id": 18,
+        "out_going_pipe_id": 33,
+        "remixing_node_id_trout": 13,
+        "remixing_node_id_trout_in_reduced": 13,
+        "remixing_node_id_tsout": 43,
+        "remixing_node_id_tsout_in_reduced": 40
+    },
+    "cluster_i": {
+        "cluster_key": "i",
+        "cluster_type": "1-1",
+        "cluster_size": 8,
+        "cluster_nodes": [
+            25,
+            24,
+            52,
+            14,
+            51,
+            13,
+            15,
+            23
+        ],
+        "in_going_pipe_id": 20,
+        "out_going_pipe_id": 33,
+        "remixing_node_id_trout": 54,
+        "remixing_node_id_trout_in_reduced": 46,
+        "remixing_node_id_tsout": 43,
+        "remixing_node_id_tsout_in_reduced": 37
+    },
+    "cluster_j": {
+        "cluster_key": "j",
+        "cluster_type": "1-1",
+        "cluster_size": 3,
+        "cluster_nodes": [
+            53,
+            29,
+            28
+        ],
+        "in_going_pipe_id": 40,
+        "out_going_pipe_id": 38,
+        "remixing_node_id_trout": 54,
+        "remixing_node_id_trout_in_reduced": 51,
+        "remixing_node_id_tsout": 41,
+        "remixing_node_id_tsout_in_reduced": 39
+    },
+    "cluster_k": {
+        "cluster_key": "k",
+        "cluster_type": "1-1",
+        "cluster_size": 9,
+        "cluster_nodes": [
+            53,
+            29,
+            28,
+            41,
+            2,
+            3,
+            4,
+            5,
+            35
+        ],
+        "in_going_pipe_id": 40,
+        "out_going_pipe_id": 35,
+        "remixing_node_id_trout": 54,
+        "remixing_node_id_trout_in_reduced": 45,
+        "remixing_node_id_tsout": 27,
+        "remixing_node_id_tsout_in_reduced": 23
+    },
+    "cluster_l": {
+        "cluster_key": "l",
+        "cluster_type": "1-1",
+        "cluster_size": 13,
+        "cluster_nodes": [
+            25,
+            24,
+            52,
+            14,
+            51,
+            13,
+            15,
+            23,
+            54,
+            43,
+            65,
+            58,
+            59
+        ],
+        "in_going_pipe_id": 66,
+        "out_going_pipe_id": 40,
+        "remixing_node_id_trout": 55,
+        "remixing_node_id_trout_in_reduced": 45,
+        "remixing_node_id_tsout": 29,
+        "remixing_node_id_tsout_in_reduced": 23
+    },
+    "cluster_m": {
+        "cluster_key": "m",
+        "cluster_type": "1-1",
+        "cluster_size": 13,
+        "cluster_nodes": [
+            53,
+            29,
+            28,
+            41,
+            2,
+            3,
+            4,
+            5,
+            35,
+            27,
+            42,
+            26,
+            54
+        ],
+        "in_going_pipe_id": 66,
+        "out_going_pipe_id": 20,
+        "remixing_node_id_trout": 55,
+        "remixing_node_id_trout_in_reduced": 42,
+        "remixing_node_id_tsout": 13,
+        "remixing_node_id_tsout_in_reduced": 9
+    }
+}
