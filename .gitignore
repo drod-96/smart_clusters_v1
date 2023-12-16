@@ -3,4 +3,9 @@ Lib/
 Scripts/
 share/
 
+ARTICLE_dhn_data/
+
+
+*.ipynb
+
 *.cfg
