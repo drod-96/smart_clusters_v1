@@ -5,6 +5,8 @@ share/
 
 ARTICLE_dhn_data/
 
+ARTICLE_hybrid_results_treatment.ipynb
+ARTICLE_post_treatment_codes.ipynb
 
 *.ipynb
 
