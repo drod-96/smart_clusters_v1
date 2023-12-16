@@ -26,7 +26,7 @@ args = parser.parse_args()
 config = vars(args)
 
 # Find the cluster
-model = config["model"]
+model_architecture = config["model"]
 version = int(config["model_version"])
 key = config["cluster_key"]
 dhn_id = int(config["cluster_dhn_id"])
@@ -37,8 +37,6 @@ if "reg" in config:
 else:
     use_reg = 0
 
-version = 2
-model_architecture = 'gru'
 l1_rate = 0.0001
 n_epochs = 100
 

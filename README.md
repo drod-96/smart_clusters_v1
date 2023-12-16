@@ -15,13 +15,29 @@ Graphic representation and manipulation are realized using Networkx [https://net
 The machine learning models are created using Keras [https://keras.io/], an open-access and straightforward to-use deep learning library built on top of tensorflow. Not *defined hyperpameters* use default values provided by Keras. By default, tensorflow performs training on gpu if available.
 
 
-# Requirements installation
+# Requirements
 
-To install the required packages, 
+## Package installation
+
+To install all required packages, enter the following line commands at the project source folder
 
 ```bash
 python -m pip install -r requirements.txt
 ``` 
+
+## Data
+
+Physical **simulation results**, needed for ML models training, **case study networks** topology and **selected clusters** json files can be downloaded from open-access drive project []. Simulation folder *ARTICLE_dhn_data* must be available at the project source folder for training codes to work.
+
+
+# ML training
+
+Selected clusters are found in *considered_clusters_1.json* and *considered_clusters_2.json* refereed as set 1 and set 2 for each of the case study network. Clusters are identified by the parent DHN (ID), the set (ID) and a key (STRING). Considered ML achitectures are [GRU, MLP, CNN] with two versions each. Further details can be found in our paper. For instance, to train a cluster denoted with key ("a") belonging to the network (DHN 1) and from the set 1, the following command may be used.
+
+```bash
+python train.py --model=gru --model_version=1 --cluster_key="a" --cluster_dhn_id=1 --cluster_set_id=1
+
+```
 
 
 # Licence
