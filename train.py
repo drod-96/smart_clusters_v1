@@ -99,22 +99,22 @@ elif model_architecture == "cnn":
     if version == 1:
         if use_reg == 0:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=4),
+                Conv1D(filters=10, kernel_size=4, activation="selu"),
                 AveragePooling1D(pool_size=4),
-                Conv1D(filters=20, kernel_size=3),
+                Conv1D(filters=20, kernel_size=3, activation="selu"),
                 AveragePooling1D(pool_size=3),
-                Conv1D(filters=30, kernel_size=2),
+                Conv1D(filters=30, kernel_size=2, activation="selu"),
                 AveragePooling1D(pool_size=2),
                 Dense(40, activation='relu'),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
         else:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=4, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
+                Conv1D(filters=10, kernel_size=4, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=4),
-                Conv1D(filters=20, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
+                Conv1D(filters=20, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=3),
-                Conv1D(filters=30, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
+                Conv1D(filters=30, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=2),
                 Dense(40, activation='relu', kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
@@ -122,18 +122,18 @@ elif model_architecture == "cnn":
     else:
         if use_reg == 0:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=3),
+                Conv1D(filters=10, kernel_size=3, activation="selu"),
                 AveragePooling1D(pool_size=3),
-                Conv1D(filters=20, kernel_size=2),
+                Conv1D(filters=20, kernel_size=2, activation="selu"),
                 AveragePooling1D(pool_size=2),
                 Dense(40, activation='relu'),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
         else:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
+                Conv1D(filters=10, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=3),
-                Conv1D(filters=20, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
+                Conv1D(filters=20, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=2),
                 Dense(40, activation='relu', kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
