@@ -3,8 +3,10 @@ Lib/
 Scripts/
 share/
 
-ARTICLE_images_plots/
-ARTICLE_hybrid_results/
+ARTICLE_images_plots_not_on_git/
+Hybrid_results_not_on_git/
+ARTICLE_images/
+ARTICLE_trained_mls_data/
 
 ARTICLE_hybrid_results_treatment.ipynb
 ARTICLE_post_treatment_codes.ipynb
@@ -14,3 +16,4 @@ ARTICLE_post_treatment_codes.ipynb
 *.pyc
 *.svg
 *.mat
+*.npy
