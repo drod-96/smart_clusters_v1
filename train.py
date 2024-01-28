@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 from keras.models import Sequential, save_model
-from keras.layers import GRU, Conv1D, AveragePooling1D, Dense
+from keras.layers import GRU, Conv1D, AveragePooling1D, Dense, Flatten
 from keras.optimizers import Adam
 from keras.callbacks import EarlyStopping, LearningRateScheduler
 from keras.regularizers import L1
@@ -99,42 +99,46 @@ elif model_architecture == "cnn":
     if version == 1:
         if use_reg == 0:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=4, activation="selu"),
+                Conv1D(filters=10, kernel_size=4, activation="selu", input_shape=(train_x.shape[1], train_x.shape[2]),),
                 AveragePooling1D(pool_size=4),
                 Conv1D(filters=20, kernel_size=3, activation="selu"),
                 AveragePooling1D(pool_size=3),
                 Conv1D(filters=30, kernel_size=2, activation="selu"),
                 AveragePooling1D(pool_size=2),
+                Flatten(),
                 Dense(40, activation='relu'),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
         else:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=4, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
+                Conv1D(filters=10, kernel_size=4, input_shape=(train_x.shape[1], train_x.shape[2]), kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=4),
                 Conv1D(filters=20, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=3),
                 Conv1D(filters=30, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=2),
+                Flatten(),
                 Dense(40, activation='relu', kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
     else:
         if use_reg == 0:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=3, activation="selu"),
+                Conv1D(filters=10, kernel_size=3, activation="selu", input_shape=(train_x.shape[1], train_x.shape[2]),),
                 AveragePooling1D(pool_size=3),
                 Conv1D(filters=20, kernel_size=2, activation="selu"),
                 AveragePooling1D(pool_size=2),
+                Flatten(),
                 Dense(40, activation='relu'),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
         else:
             model = Sequential([
-                Conv1D(filters=10, kernel_size=3, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
+                Conv1D(filters=10, kernel_size=3, input_shape=(train_x.shape[1], train_x.shape[2]), kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=3),
                 Conv1D(filters=20, kernel_size=2, kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate), activation="selu"),
                 AveragePooling1D(pool_size=2),
+                Flatten(),
                 Dense(40, activation='relu', kernel_regularizer=L1(l1=l1_rate), bias_regularizer=L1(l1=l1_rate)),
                 Dense(train_y.shape[1], activation='relu', name='output_dense')
             ])
