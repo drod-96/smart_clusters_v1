@@ -3,7 +3,6 @@ Lib/
 Scripts/
 share/
 
-ARTICLE_dhn_data/
 ARTICLE_images_plots/
 ARTICLE_hybrid_results/
 
@@ -14,3 +13,4 @@ ARTICLE_post_treatment_codes.ipynb
 *.cfg
 *.pyc
 *.svg
+*.mat
