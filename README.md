@@ -30,7 +30,7 @@ python -m pip install -r requirements.txt
 
 ## Data
 
-Physical **simulation results**, needed for ML models training, **case study networks** topology and **selected clusters** json files can be downloaded from open-access [drive project](https://drive.google.com/drive/folders/1JOSh7wHtEryVk4NW7ptaDTdXBQCPYDtb?usp=drive_link). Simulation folder *ARTICLE_dhn_data* must be available at the project source folder for training codes to work.
+Physical **simulation results**, needed for ML models training, **case study networks** topology and **selected clusters** json files can be downloaded from open-access [Mendeley Data](https://data.mendeley.com/datasets/77stj44drm/1). Simulation folder *ARTICLE_dhn_data* must be available at the project source folder for training codes to work.
 
 
 # ANNs training
