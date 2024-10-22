@@ -11,12 +11,14 @@ This project contains necessary data and codes to reproduce our results in our p
 
 # Project description
 
-This project contains codes to create graphic representation of simulated District Heating Networks, to generate random-walk based clusters, and machine learning pipeline framework to learn and replace cmlusters. 
+This project contains the source codes and post-processing pipelines of the methodology and results presented in our [article](https://doi.org/10.1016/j.egyai.2024.100393). The major parts of this repository contain the following:
 
-Graphic representation and manipulation are realized using [Networkx](https://networkx.org), a python package built for creation, manipulation and study of complex networks structures.
+- **Graph generator**: a graph generator using graph-theory based processes to generate *District Heating Networks* like graphs. A paper which dives into the details of this graph generator will be presented in future conference. Graphic representation and manipulation are realized using [Networkx](https://networkx.org), a python package built for creation, manipulation and study of complex networks structures.
 
-The machine learning models are created using [Keras](https://keras.io), an open-access and straightforward to-use deep learning library built on top of tensorflow. Not *defined hyperpameters* use default values provided by Keras. By default, tensorflow performs training on gpu if available.
+- **Clusters learning**: we provide in this repository the source codes to randomly select clusters of heat consumers within District Heating Networks using random-walks and the necessary machine learning pipeline codes to train different architectures of *Artificial Neural Networks* models and replace the clusters. The machine learning models are created using [Keras](https://keras.io), an open-access and straightforward to-use deep learning library built on top of *TensorFlow*. Not *defined hyperpameters* use default values provided by Keras. By default, TensorFlow performs training on gpu if available. Training processes have been realized using on the High Performance Computer [Jean Zay](http://www.idris.fr/jean-zay/).
 
+- **Hybrid simulation results**: we also provide post-processing jupiter notebooks to retrieve the results of the hybrid simulation presented in our [paper](https://doi.org/10.1016/j.egyai.2024.100393). Physical and Hybrid modeling codes are not available in this repository as they will be made available within an *in-progress* journal paper presenting in all details the physical components. However, our paper presents the major physical equations involved in these modeling codes. Further details can be shared at request.
+  
 
 # Requirements
 
